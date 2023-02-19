@@ -13,7 +13,7 @@ int main(void) {
     respostas_sexo = (int*) malloc(num_pessoas * sizeof(int));
     respostas_gosto = (int*) malloc(num_pessoas * sizeof(int));
 
-    if((respostas_gosto == NULL) & (respostas_sexo == NULL)) {
+    if((respostas_gosto == NULL) || (respostas_sexo == NULL)) {
 
         printf("\nERRO!\n");
         exit(1);
