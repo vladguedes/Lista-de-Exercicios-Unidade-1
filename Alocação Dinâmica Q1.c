@@ -30,11 +30,15 @@ int main(void) {
 
         if(respostas_sexo[i] == 1) {
 
-            sexo_m += 1;
+            sexo_m++;
 
             if(respostas_gosto[i] == 1) {
 
-                gosto_m += 1;
+                gosto_m++;
+
+            }
+
+            else {
 
             }
 
@@ -42,11 +46,15 @@ int main(void) {
 
         else {
 
-            sexo_f += 1;
+            sexo_f++;
 
             if(respostas_gosto[i] == 1) {
 
-                gosto_f += 1;
+                gosto_f++;
+
+            }
+
+            else {
 
             }
 
@@ -54,8 +62,8 @@ int main(void) {
 
     }
 
-    media_m = (gosto_m / num_pessoas) * 100;
-    media_f = (gosto_f / num_pessoas) * 100;
+    media_m = (float)((sexo_m - gosto_m) / (float)num_pessoas) * 100.0;
+    media_f = (float)(gosto_f / (float)num_pessoas) * 100.0;
 
     printf("\nPorcentagem de pessoas do sexo feminino que gostaram do produto foi de %%%.0f.", media_f);
     printf("\nPorcentagem de pessoas do sexo masculino que nao gostaram do produto foi de %%%.0f.", media_m);
