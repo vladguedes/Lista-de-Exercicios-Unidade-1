@@ -1,0 +1,8 @@
+Primeiro eu fiz duas alocações dinâmicas com as variáveis respostas_sexo e resposta_gosto, pois são elas que iram guardar as respostas dos usuários em relação ao seu
+sexo e se gostaram do produto.
+Pedi para o usuário digitar a quantidade de pessoas que iriam responder.
+Depois dentro de um for, pedi para os usuários digitarem seu gênero, sendo 1 - masculino e 2 - feminino, e se gostaram do produto, sendo 1 - sim e 2 - não.
+Logo em seguida fiz duas condições, uma para caso o usuário fosse masculino e outra caso ele tenha gostado do produto, cada condição tinha um else, afirmando
+que era do sexo feminino e se tinha ou nao gostado do produto. Caso as respostas fossem sim, minha variável gosto recebia + 1.
+No final fiz duas variáveis para receber a porcentagem de cada sexo, sendo o masculino os que nao gostaram e o feminino os que gostaram.
+Depois printei as porcentagens.
